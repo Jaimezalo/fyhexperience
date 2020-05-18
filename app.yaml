@@ -1,4 +1,4 @@
 runtime: php72 # Replace with php73 to use the PHP 7.3 runtime
 
 handlers:
- script: auto
+
