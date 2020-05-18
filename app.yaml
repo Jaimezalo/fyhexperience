@@ -1,4 +1,13 @@
 runtime: php72 # Replace with php73 to use the PHP 7.3 runtime
 
 handlers:
+    - url: /favicon\.ico
+      static_files: favicon.ico
+      upload: favicon\.ico
+
+    - url: /bootstrap
+      static_dir: bootstrap
+
+    - url: /.*
+      script: guestbook.app
 
