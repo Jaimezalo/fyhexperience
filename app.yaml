@@ -1,13 +1,14 @@
-runtime: php72 # Replace with php73 to use the PHP 7.3 runtime
+runtime: php72
+api_version: 1
 
 handlers:
-    - url: /favicon\.ico
-      static_files: favicon.ico
-      upload: favicon\.ico
+# Serve images as static resources.
+- url: /(.+\.(gif|png|jpg))$
+  static_files: \1
+  upload: .+\.(gif|png|jpg)$
+  application_readable: true
 
-    - url: /bootstrap
-      static_dir: bootstrap
-
-    - url: /.*
-      script: auto
+# Serve php scripts.
+- url: /(.+\.php)$
+  script: \1
 
