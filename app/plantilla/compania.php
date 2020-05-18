@@ -1,0 +1,44 @@
+<?php ob_start();?> <!--Guardo la salida en un buffer-->
+ 
+<div class="row justify-content-md-center">
+  <h3 class="subtitle">¿Con quién te apetece viajar ahora mismo?</h3>
+</div>
+
+<div class="row justify-content-md-center">
+  <div class="col-lg-auto">
+    <a href="?cia=Amigos&orden=Enviar">
+      <img src="imagenes/amigos.jpg" class="rounded img-fluid d-inline-block opciones mt-1" alt="Amigos">
+    </a>
+  </div>
+  <div class="col-lg-auto">
+    <a href="?cia=Pareja&orden=Enviar">
+      <img src="imagenes/pareja.jpg" class="rounded img-fluid d-inline-block opciones mt-1" alt="Pareja">
+    </a>
+  </div>
+</div>
+
+<div class="row justify-content-md-center">
+  <div class="col-lg-auto">
+    <a href="?cia=Sol@&orden=Enviar">
+      <img src="imagenes/solo.jpg" class="rounded img-fluid d-inline-block opciones mt-1" alt="Solo">
+    </a>
+  </div>
+  <div class="col-lg-auto">
+    <a href="?cia=Familia&orden=Enviar">
+      <img src="imagenes/familia.png" class="rounded img-fluid d-inline-block opciones mt-1" alt="Familia">
+    </a>
+  </div>
+</div>
+
+<div class="row justify-content-md-center mt-5">
+  <div class="col-lg-auto">
+    <a href="?orden=Inicio">
+      <input type="button"class="btn btn-success mt-2" value="Volver">
+    </a>
+  </div>
+</div>
+
+<?php
+$contenido = ob_get_clean();// Vacio el bufer
+include_once "secundaria.php";
+?>
