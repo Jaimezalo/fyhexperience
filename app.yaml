@@ -4,6 +4,12 @@ handlers:
 # Serve a directory as a static resource.
 #- url: /stylesheets
  # static_dir: stylesheets
+- url: /favicon\.ico
+ static_files: favicon.ico
+ upload: favicon\.ico
+
+- url: /bootstrap
+ static_dir: bootstrap
 
 # Serve images as static resources.
 #- url: /(.+\.(gif|png|jpg))$
