@@ -9,5 +9,5 @@ handlers:
       static_dir: bootstrap
 
     - url: /.*
-      script: guestbook.app
+      script: auto
 
