@@ -12,6 +12,9 @@ handlers:
 
 - url: /img
   static_dir: imagenes
+  
+- url: /stylesheets
+  static_dir: stylesheets
 
 - url: /(.*\.php)
   static_files: \1
