@@ -15,7 +15,7 @@
         <h3 class="card-header text-center subtitle"><i>Descubre el destino más adecuado para tí</i></h3>
         <div class="card-body">
             <p class="card-text description">
-            	<i>Cuántas veces mas tenido expectativas de un sitio y te has encontrado con todo lo contrario...<br>
+            	<i>Cuántas veces has tenido expectativas de un sitio y te has encontrado con todo lo contrario...<br>
             	Descubre que destinos pueden satisfacer mejor tus necesidades ya sea para un alocado viaje con amigos o para
             	pasar un finde de relax en familia. ¡Y muchas otras opciones más!</i>
             </p>
