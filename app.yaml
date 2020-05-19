@@ -13,7 +13,7 @@ handlers:
 - url: /img
   static_dir: imagenes
 
-- /index.html
+- /index.php
   static_files: index.php
   upload: index\.php
 
