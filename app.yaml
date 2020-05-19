@@ -14,7 +14,7 @@ handlers:
   static_dir: imagenes
 
 - /index.php
-  static_files: index.php
+  static_files: /index.php
   upload: index\.php
 
 - url: .*
