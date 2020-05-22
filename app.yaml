@@ -4,11 +4,15 @@ runtime: php72
 
 
 handlers:
-- url: /web
-  static_dir: css
+- url: /favicon\.ico
+  static_files: imagenes/FYHIcono.png
+  upload: imagenes/favicon\.icon
+
+- url: /css
+  static_dir: web/css
 
 - url: /js
-  static_dir: js
+  static_dir: web/js
 
 - url: /imagenes
   static_dir: imagenes
@@ -16,12 +20,8 @@ handlers:
 - url: /stylesheets
   static_dir: stylesheets
   
-- url: /web
-  static_dir: js
-
-- url: /(.*\.php)
-  static_files: \1
-  upload: index.index
+- url: /bootstrap
+  static_dir: web/js
 
 - url: .*
   script: auto
