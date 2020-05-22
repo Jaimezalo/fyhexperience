@@ -10,6 +10,9 @@ handlers:
 - url: /stylesheets
   static_dir: /web/css
 
+- url: text/css
+  static_dir: web/css
+
 - url: /css/bootstrap
   static_dir: web/css/bootstrap
 
