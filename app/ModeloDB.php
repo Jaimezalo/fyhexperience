@@ -1,4 +1,5 @@
 <?php
+use PHPUnit\Framework\TestCase;
 
 class BaseDatos extends SQLite3
 {
@@ -36,16 +37,6 @@ class BaseDatos extends SQLite3
             $tDestinos[$fila['d_nombre']] = $datosdestino;
         }
         return $tDestinos;
-
-       /* while ($fila = $result->fetchArray()) {
-
-            echo "<h3>" . $contador . ".-" . $fila['d_nombre'] . "</h3>";
-            echo "<p>" . $fila['d_descripcion'] . "</p>";
-            echo "<a href='" . $fila['d_link'] . "'><img title='Más información...' src='imagenes/" . $fila['d_nombre'] . ".jpg' height='300' width='500'></a><br>";
-            echo "<a href='https://www.google.es/maps/place/" . $fila['d_nombre'] . "'>Ver en mapa</a><br>";
-            echo "<a href='" . $fila['d_link'] . "'>Más información</a><br>";
-            $contador ++;
-        }*/
 
         $bd->close();
     }

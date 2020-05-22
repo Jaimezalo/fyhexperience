@@ -1,4 +1,5 @@
 <?php
+
 include_once 'app/ModeloDB.php';
 
 function ctrInicio()
@@ -59,4 +60,11 @@ function ctrLista()
 function ctrCerrar()
 {
     header('Location:index.php');
+}
+
+function testLista(){
+    $destinos = BaseDatos::Consultar();
+
+
+
 }
