@@ -8,7 +8,7 @@ handlers:
   upload: imagenes/favicon\.icon
 
 - url: /stylesheets
-  static_dir: /web/css
+  static_dir: /stylesheets
 
 - url: /css
   static_dir: web/css
