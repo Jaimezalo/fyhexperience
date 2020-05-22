@@ -9,9 +9,11 @@ handlers:
 
 - url: /stylesheets
   static_dir: /stylesheets
+  mime_type: text/css
 
 - url: /css
   static_dir: web/css
+  mime_type: text/css
 
 - url: /css/bootstrap
   static_dir: web/css/bootstrap
