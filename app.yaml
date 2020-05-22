@@ -18,8 +18,13 @@ handlers:
 - url: /css/bootstrap
   static_dir: web/css/bootstrap
 
-- url: /js/bootstrap
-  static_dir: web/js/bootstrap
+- url: /js
+  static_dir: web/js
+  mime_type: application/javascript
+
+- url: /js
+  static_dir: web/js
+  mime_type: text/css
 
 - url: /imagenes
   static_dir: imagenes
