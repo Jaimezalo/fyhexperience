@@ -17,7 +17,8 @@ handlers:
 
 - url: /css/bootstrap
   static_dir: web/css/bootstrap
-
+  mime_type: text/css
+  
 - url: /js
   static_dir: web/js
   mime_type: application/javascript

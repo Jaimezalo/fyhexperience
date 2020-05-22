@@ -5,9 +5,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>FYH - Encuentra tu destino</title>
 	<!-- Bootstrap CSS, JQUERY-UI, DEFAULT -->
-	<link href="web/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-  <link href="web/css/estilos.css" rel="stylesheet"  type="text/css">
-  <link href="web/css/jquery-ui.css" rel="stylesheet"  type="text/css">
+	<link type="text/css" href="web/css/bootstrap.min.css" rel="stylesheet">
+  <link type="text/css" href="web/css/estilos.css" rel="stylesheet">
+  <link type="text/css" href="web/css/jquery-ui.css" rel="stylesheet">
     <!-- ------------- -->
 	<link rel="icon" href="imagenes/FYHIcono.png" type="image/png">
 </head>
