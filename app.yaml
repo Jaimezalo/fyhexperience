@@ -10,23 +10,6 @@ handlers:
 - url: /stylesheets
   static_dir: /stylesheets
 
-
-- url: /css
-  static_dir: web/css
-
-
-- url: /css/bootstrap
-  static_dir: web/css/bootstrap
-
-
-- url: /js
-  static_dir: web/js
-
-
-- url: /js
-  static_dir: web/js
-
-
 - url: /imagenes
   static_dir: imagenes
 
