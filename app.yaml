@@ -1,6 +1,6 @@
-runtime: php73
-api_version: 1
-
+application: findYourHolidays
+version: 1
+runtime: php72
 
 
 handlers:
