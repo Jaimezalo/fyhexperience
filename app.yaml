@@ -9,23 +9,23 @@ handlers:
 
 - url: /stylesheets
   static_dir: /stylesheets
-  mime_type: text/css
+
 
 - url: /css
   static_dir: web/css
-  mime_type: text/css
+
 
 - url: /css/bootstrap
   static_dir: web/css/bootstrap
-  mime_type: text/css
+
 
 - url: /js
   static_dir: web/js
-  mime_type: text/css
+
 
 - url: /js
   static_dir: web/js
-  mime_type: text/css
+
 
 - url: /imagenes
   static_dir: imagenes
