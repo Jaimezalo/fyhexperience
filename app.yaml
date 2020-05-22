@@ -7,6 +7,9 @@ handlers:
   static_files: imagenes/FYHIcono.png
   upload: imagenes/favicon\.icon
 
+- url: /stylesheets
+  static_dir: /web/css
+
 - url: /css/bootstrap
   static_dir: web/css/bootstrap
 
