@@ -8,10 +8,10 @@ handlers:
   upload: imagenes/favicon\.icon
 
 - url: /css/bootstrap
-  static_dir: web/css
+  static_dir: web/css/bootstrap
 
 - url: /js/bootstrap
-  static_dir: web/js
+  static_dir: web/js/bootstrap
 
 - url: /imagenes
   static_dir: imagenes
