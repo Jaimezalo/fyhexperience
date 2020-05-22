@@ -1,0 +1,28 @@
+runtime: php72
+#api_version: 1
+
+
+
+handlers:
+- url: /favicon\.ico
+  static_files: imagenes/FYHIcono.png
+  upload: imagenes/favicon\.icon
+
+- url: /css
+  static_dir: web/css
+
+- url: /js
+  static_dir: web/js
+
+- url: /imagenes
+  static_dir: imagenes
+  
+- url: /stylesheets
+  static_dir: stylesheets
+  
+- url: /bootstrap
+  static_dir: web/js
+
+- url: .*
+  script: auto
+
