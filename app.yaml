@@ -4,13 +4,13 @@ runtime: php72
 
 
 handlers:
-- url: /css
+- url: /web
   static_dir: css
 
 - url: /js
   static_dir: js
 
-- url: /img
+- url: /imagenes
   static_dir: imagenes
   
 - url: /stylesheets
