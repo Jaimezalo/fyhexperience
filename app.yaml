@@ -7,20 +7,14 @@ handlers:
   static_files: imagenes/FYHIcono.png
   upload: imagenes/favicon\.icon
 
-- url: /css
+- url: /css/bootstrap
   static_dir: web/css
 
-- url: /js
+- url: /js/bootstrap
   static_dir: web/js
 
 - url: /imagenes
   static_dir: imagenes
-  
-- url: /stylesheets
-  static_dir: web/css
-  
-- url: /bootstrap
-  static_dir: web/css
 
 - url: .*
   script: auto
