@@ -10,18 +10,19 @@
   <link type="text/css" href="web/css/jquery-ui.css" rel="stylesheet">
     <!-- ------------- -->
 	<link rel="icon" href="imagenes/FYHIcono.png" type="image/png">
+  <script src="bower_components/firebase/firebase.js"></script>
 </head>
 
-<nav id="navbar-superior" class="navbar navbar-expand-lg fixed-top navbar-light">
+<nav id="navbar-superior" class="navbar navbar-expand-lg fixed-top navbar-dark">
   <a class="navbar-brand mr-0 mr-md-2" href="index.php" aria-label="icono">
-            <img src="imagenes/FYHIcono.png" class="icono">
-        </a>
-  <h5 class="my-0 mr-md-auto font-weight-normal"><a href="index.php" class="title">Find Your Holidays</a></h5>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <img src="imagenes/FYHIcono.png" class="icono">
+  </a>
+  <p class="my-0 mr-md-auto font-weight-normal"><a href="index.php" class="title">Find Your Holidays</a></p>
+  <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse offset-sm-4" id="navbarNavDropdown">
-    <ul class="navbar-nav">
+    <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
         <a class="nav-link" href="index.php">Inicio <span class="sr-only">(current)</span></a>
       </li>
@@ -51,7 +52,9 @@
 </nav>
 
 <body>
-	<?= $contenido ?>
+<div id="contenido" class="container mb-5">
+<?= $contenido ?>
+</div>
 
 	<script src="web/js/jquery.js"></script>
     <script src="web/js/popper.min.js"></script>
@@ -74,6 +77,27 @@
           index = 0;
       }
     </script>
+    <script>
+  // Your web app's Firebase configuration
+
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+<script>
+  var databaseService = firebase.database();
+  var referencia = databaseService.ref("destinos");
+  referencia.set({
+    campoTest: 'Otro valor del test',
+    ahora: new Date().getTime()
+})
+        .then(function() {
+            console.log('dato almacenado correctamente');
+        })
+        .catch(function(error) {
+            console.log('detectado un error', error);
+        });
+</script>
 </body>
 <footer>
 <nav id="navbar-inferior" class="navbar fixed-bottom navbar-expand-sm navbar-dark">

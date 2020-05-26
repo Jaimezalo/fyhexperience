@@ -1,9 +1,9 @@
 <?php ob_start();?> <!--Guardo la salida en un buffer-->
 
-<div class="row justify-content-md-center">
+<div class="row justify-content-md-center mx-auto">
   <h3 class="subtitle mt-5">Selecciona que tipo de turismo buscas principalmente:</h3>
 </div> 
-<div class="row justify-content-md-center">
+<div class="row justify-content-md-center mx-auto">
   <div class="col-lg-auto">
     <a href="?cia=<?= $_SESSION['cia'] ?>&tipo=<?= $_SESSION['tipo'] ?>&precio=<?= $_SESSION['precio'] ?>&afluencia=<?= $_SESSION['afluencia'] ?>&tipotur=Cultural&orden=Enviar">
       <img src="imagenes/cultural.jpg" class="rounded img-fluid d-inline-block opciones mt-1" alt="cultural">
@@ -21,7 +21,7 @@
   </div>
 </div>
 
-<div class="row justify-content-md-center">
+<div class="row justify-content-md-center mx-auto">
   <div class="col-lg-auto">
     <a href="?cia=<?= $_SESSION['cia'] ?>&tipo=<?= $_SESSION['tipo'] ?>&precio=<?= $_SESSION['precio'] ?>&afluencia=<?= $_SESSION['afluencia'] ?>&tipotur=Rural&orden=Enviar">
       <img src="imagenes/rural.jpg" class="rounded img-fluid d-inline-block opciones mt-1" alt="Rural">
@@ -41,7 +41,7 @@
   </div>
 </div>
 
-<div class="row justify-content-md-center">
+<div class="row justify-content-md-center mx-auto">
   <div class="col-lg-auto">
     <a href="?cia=<?= $_SESSION['cia'] ?>&tipo=<?= $_SESSION['tipo'] ?>&precio=<?= $_SESSION['precio'] ?>&orden=Enviar">
       <input type="button"class="btn btn-success mt-2" value="Volver">

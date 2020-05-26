@@ -11,27 +11,27 @@
     <!-- ------------- -->
 	<link rel="icon" href="imagenes/FYHIcono.png" type="image/png">
 </head>
-<nav class="navbar navbar-expand-lg fixed-top navbar-light">
+<nav class="navbar navbar-expand-lg fixed-top navbar-dark shadow p-3">
   <a class="navbar-brand mr-0 mr-md-2" href="index.php" aria-label="icono">
             <img src="imagenes/FYHIcono.png" class="icono">
         </a>
-  <h5 class="my-0 mr-md-auto font-weight-normal"><a href="index.php" class="title">Find Your Holidays</a></h5>
+  <p class="my-0 mr-md-auto font-weight-normal"><a href="index.php" class="title">Find Your Holidays</a></p>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse offset-sm-4" id="navbarNavDropdown">
     <ul class="navbar-nav">
-      <li class="nav-item active">
-        <a class="nav-link" href="index.php">Inicio <span class="sr-only">(current)</span></a>
+      <li class="nav-item">
+        <a class="nav-link font-italic Italica lead text-light mr-3" href="index.php">Inicio <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Qué ofrecemos</a>
+        <a class="nav-link font-italic Italica lead text-light mr-3" href="#">Qué ofrecemos</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Quiénes somos</a>
+        <a class="nav-link font-italic Italica lead text-light mr-3" href="#">Quiénes somos</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Contacto</a>
+        <a class="nav-link font-italic Italica lead text-light" href="#">Contacto</a>
       </li>
       <!--
       <li class="nav-item dropdown">
@@ -52,19 +52,33 @@
 <body>
 
 <div class="container mb-5">
-<div class="row justify-content-md-center mt-5">
-	<div class="col">
-	<ul class="list-group list-group-horizontal ml-3 mt-4">
-        <?= isset($_GET['cia'])?"<li class='list-group-item list-group-item-danger ml-1'>".$_GET['cia']." <a class=\"cruces\" href=\"?orden=Enviar\">&#x2718;</a></li>":''?>
-        <?= isset($_GET['tipo'])?"<li class='list-group-item list-group-item-success ml-1'>".$_GET['tipo']." <a class=\"cruces\" href=\"?cia=".$_SESSION['cia']."&orden=Enviar\">&#x2718;</a></li>":''?>
-        <?= isset($_GET['precio'])?"<li class='list-group-item list-group-item-warning ml-1'>".$_GET['precio']." <a class=\"cruces\" href=\"?cia=".$_SESSION['cia']."&tipo=".$_SESSION['tipo']."&orden=Enviar\">&#x2718;</a></li>":''?>
-        <?= isset($_GET['afluencia'])?"<li class='list-group-item list-group-item-dark ml-1'>".$_GET['afluencia']." <a class=\"cruces\" href=\"?cia=".$_SESSION['cia']."&tipo=".$_SESSION['tipo']."&precio=".$_SESSION['precio']."&orden=Enviar\">&#x2718;</a></li>":''?>
-        <?= isset($_GET['tipotur'])?"<li class='list-group-item list-group-item-info ml-1'>".$_GET['tipotur']." <a class=\"cruces\" href=\"?cia=".$_SESSION['cia']."&tipo=".$_SESSION['tipo']."&precio=".$_SESSION['precio']."&afluencia=".$_SESSION['afluencia']."&orden=Enviar\">&#x2718;</a></li>":''?>	
-	  </ul>
-	</div>
+<div class="row mt-5"></div>
+<div class="row mt-5"></div>
+
+<div id="listaResultados" class="row mt-5 ">
+    <?= isset($_GET['cia'])?"<div class='col-lg-2 col-md-4 col-xs-12 col-sm-4 bg-primary mx-1 font-italic Italica lead text-light rounded shadow p-2 text-right'>".$_GET['cia'].
+    "<a class=\"cruces ml-5\" href=\"?orden=Enviar\">&#x2718;</a></div>":''?>
+  
+    <?= isset($_GET['tipo'])?"<div class='col-lg-2 col-md-4 col-xs-12 col-sm-4 bg-secondary mx-1 font-italic Italica lead text-light rounded shadow p-2 text-right'>".$_GET['tipo'].
+    "<a class=\"cruces ml-5\" href=\"?orden=Enviar\">&#x2718;</a> </div>":''?>
+ 
+    <?= isset($_GET['precio'])?"<div class='col-lg-2 col-md-4 col-xs-12 col-sm-4 bg-success mx-1 font-italic Italica lead text-light rounded shadow p-2 text-right'>".$_GET['precio'].
+    "<a class=\"cruces ml-5\" href=\"?orden=Enviar\">&#x2718;</a></div>":''?>
+  
+    <?= isset($_GET['afluencia'])?"<div class='col-lg-2 col-md-4 col-xs-12 col-sm-4 bg-danger mx-1 font-italic Italica lead text-light rounded shadow p-2 text-right'>".$_GET['afluencia'].
+    "<a class=\"cruces ml-5\" href=\"?orden=Enviar\">&#x2718;</a></div>":''?>
+  
+    <?= isset($_GET['tipotur'])?"<div class='col-lg-2 col-md-4 col-xs-12 col-sm-4 bg-warning mx-1 font-italic Italica lead text-light rounded shadow p-2 text-right'>".$_GET['tipotur'].
+    "<a class=\"cruces ml-5\" href=\"?orden=Enviar\">&#x2718;</a></div>":''?>
+  
 </div>
-	<?= $contenido ?>
+
 </div>
+<div id="contenido" class="container mb-5 ml-2">
+<?= $contenido ?>
+</div>
+
+
 	<script src="web/js/jquery.js"></script>
   <script src="web/js/popper.min.js"></script>
   <script src="web/js/bootstrap.min.js"></script>

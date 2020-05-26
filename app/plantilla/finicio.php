@@ -9,8 +9,7 @@
     }
 </style>
 
-<div class="col mt-5"></div>
-<div class="container espacio-sup">
+<div class="container-fluid espacio-sup">
     <div class="offset-md-2 col-md-8 card p-0 mb-5">
         <h3 class="card-header text-center subtitle"><i>Descubre el destino más adecuado para tí</i></h3>
         <div class="card-body">
@@ -23,6 +22,7 @@
             <button type="button" onclick="window.location.href='index.php?orden=Empezar'" class="btn offset-sm-4 col-sm-4 btn-block btn-outline-danger">&#8640; Empezar &#8614;</button>
         </div>
     </div>
+    
 </div>
 
 <?php
