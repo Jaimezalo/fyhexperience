@@ -1,14 +1,5 @@
 <?php ob_start();?> <!--Guardo la salida en un buffer-->
 
-<style type="text/css">
-    body{
-      background-image: url("imagenes/fondo4.jpg");
-      background-repeat: no-repeat;
-      background-size: auto;
-      background-position: cover;
-    }
-</style>
-
 <div class="container-fluid espacio-sup">
     <div class="offset-md-2 col-md-8 card p-0 mb-5">
         <h3 class="card-header text-center subtitle"><i>Descubre el destino más adecuado para tí</i></h3>

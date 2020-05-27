@@ -8,11 +8,13 @@
 	<link type="text/css" href="web/css/bootstrap.min.css" rel="stylesheet">
   <link type="text/css" href="web/css/estilos.css" rel="stylesheet">
   <link type="text/css" href="web/css/jquery-ui.css" rel="stylesheet">
+  <link rel="stylesheet" href="web/css/swipebox.css">
     <!-- ------------- -->
 	<link rel="icon" href="imagenes/FYHIcono.png" type="image/png">
   <script src="bower_components/firebase/firebase.js"></script>
-</head>
 
+</head>
+<div id="fondo">
 <nav id="navbar-superior" class="navbar navbar-expand-lg fixed-top navbar-dark">
   <a class="navbar-brand mr-0 mr-md-2" href="index.php" aria-label="icono">
       <img src="imagenes/FYHIcono.png" class="icono">
@@ -23,30 +25,18 @@
   </button>
   <div class="collapse navbar-collapse offset-sm-4" id="navbarNavDropdown">
     <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="index.php">Inicio <span class="sr-only">(current)</span></a>
+    <li class="nav-item">
+        <a class="nav-link font-italic Italica lead text-light mr-3" href="index.php">Inicio <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Qué ofrecemos</a>
+        <a class="nav-link font-italic Italica lead text-light mr-3" href="#">Qué ofrecemos</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Quiénes somos</a>
+        <a class="nav-link font-italic Italica lead text-light mr-3" href="#">Quiénes somos</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Contacto</a>
-      </li>
-      <!--
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Dropdown link
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <a class="dropdown-item" href="#">Something else here</a>
-        </div>
-      </li>
-      -->
+        <a class="nav-link font-italic Italica lead text-light" href="#">Contacto</a>
+      </li>    
     </ul>
   </div>
 </nav>
@@ -57,47 +47,34 @@
 </div>
 
 	<script src="web/js/jquery.js"></script>
-    <script src="web/js/popper.min.js"></script>
-    <script src="web/js/bootstrap.min.js"></script>
-    <script src="web/js/jquery-ui.js"></script>
-    <script type="text/javascript">
-      var index = 0;
-      var listaimg = ["imagenes/fondo1.jpg", "imagenes/fondo2.jpg", "imagenes/fondo3.jpg", "imagenes/fondo4.jpg"];
-      
-      $(function() {
-        
-        setInterval(carrusel, 5000);
-      });
+  <script src="web/js/popper.min.js"></script>
+  <script src="web/js/bootstrap.min.js"></script>
+  <script src="web/js/jquery-ui.js"></script>
+  <script src="web/js/jquery-2.0.3.js"></script>
+  <script src="web/js/jquery.swipebox.js"></script>
+  <script src="http://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
 
 
-      function carrusel() {
-        $('body').css("background-image", 'url(' + listaimg[index] + ')');
-        index++;
-        if(index == 4)
-          index = 0;
-      }
-    </script>
-    <script>
-  // Your web app's Firebase configuration
 
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
-  firebase.analytics();
-</script>
-<script>
-  var databaseService = firebase.database();
-  var referencia = databaseService.ref("destinos");
-  referencia.set({
-    campoTest: 'Otro valor del test',
-    ahora: new Date().getTime()
-})
-        .then(function() {
-            console.log('dato almacenado correctamente');
-        })
-        .catch(function(error) {
-            console.log('detectado un error', error);
-        });
-</script>
+  <script type="text/javascript" language="javascript" src="Scripts/jquery.BgImageTransition.js"></script>
+  <script type="text/javascript">
+    var index = 0;
+    var listaimg = ["imagenes/fondo5.jpg", "imagenes/fondo2.jpg", "imagenes/fondo3.jpg", "imagenes/fondo4.jpg"];
+    $('body').css("background-image", 'url("imagenes/fondo5.jpg")');
+    $(function() {      
+      setInterval(carrusel, 3500);
+    });
+
+    function carrusel() {
+      $('body').css("background-image", 'url(' + listaimg[index] + ')');
+      index++;
+      if(index == 4)
+        index = 0;
+    }
+    
+  </script>
 </body>
 <footer>
 <nav id="navbar-inferior" class="navbar fixed-bottom navbar-expand-sm navbar-dark">
@@ -134,4 +111,6 @@
       </div>
     </nav>
 </footer>
+
+</div>
 </html>

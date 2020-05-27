@@ -10,7 +10,6 @@
 	src: url(fuentes/Averia-Gruesa.ttf)
 }
 
-
 .title{
 	font-family: Poetsen;
 	text-decoration: none;
@@ -30,7 +29,12 @@
 	text-decoration: none;
 	font-size: 2em;
 }
-
+body{
+	background-image: url("imagenes/fondo4.jpg");
+	background-repeat: no-repeat;
+	background-size: auto;
+	background-position: cover;
+}
 .description{font-size: 1.1em;}
 
 .categories{margin: 0 auto;width: 40%;}
