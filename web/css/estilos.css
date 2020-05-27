@@ -72,6 +72,7 @@ body{
 .showcase .showcase-text{padding:3rem;}
 .navbar{background-color: rgb(56, 43, 43);}
 #listaResultados{text-shadow: 1px 2px #999;}
+
 @media (min-width:768px){
 	.showcase .showcase-text{
 		padding:7rem}

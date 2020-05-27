@@ -55,7 +55,7 @@
 <div class="row mt-5"></div>
 <div class="row mt-5"></div>
 
-<div id="listaResultados" class="row mt-5 ">
+<div id="listaResultados" class="row mt-2 ">
     <?= isset($_GET['cia'])?"<div class='col-lg-2 col-md-4 col-xs-12 col-sm-4 bg-primary mx-1 font-italic Italica lead text-light rounded shadow p-2 text-right'>".$_GET['cia'].
     "<a class=\"cruces ml-5\" href=\"?orden=Enviar\">&#x2718;</a></div>":''?>
   
@@ -74,9 +74,10 @@
 </div>
 
 </div>
-<div id="contenido" class="container mb-5 ml-2">
+<div id="contenido2" class="container mb-5 ml-2">
 <?= $contenido ?>
 </div>
+
 
 
 	<script src="web/js/jquery.js"></script>

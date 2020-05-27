@@ -42,7 +42,7 @@
 </nav>
 
 <body>
-<div id="contenido" class="container mb-5">
+<div id="contenido" class="container mt-5">
 <?= $contenido ?>
 </div>
 
