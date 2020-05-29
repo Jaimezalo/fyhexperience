@@ -13,6 +13,10 @@
   <script src="bower_components/firebase/firebase.js"></script>
 
 </head>
+<!--<video id="video_background" loop autoplay preload muted>
+<source src="imagenes/videoFondo.mp4" type='video/mp4; codecs="avc1,mp4a"'/>
+<source src="imagenes/videoFondo.webm" type='video/webm; codecs="vp8,vorbis"'/>
+</video>-->
 <div id="fondo">
 <nav id="navbar-superior" class="navbar navbar-expand-lg fixed-top navbar-dark">
   <a class="navbar-brand mr-0 mr-md-2" href="index.php" aria-label="icono">

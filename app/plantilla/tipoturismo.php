@@ -50,7 +50,7 @@
     
   </div>
 </div>
-
+<div class="row justify-content-md-center mx-auto"><div class="col-lg-auto mb-5"></div></div>
 
 
 
