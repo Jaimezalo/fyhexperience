@@ -73,7 +73,7 @@
   
 </div>
 </div>
-<div id="contenido2" class="container mb-5 ml-2">
+<div id="contenido2" class="container mb-5">
 <?= $contenido ?>
 </div>
 

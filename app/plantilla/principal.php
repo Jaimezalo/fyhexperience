@@ -8,16 +8,11 @@
 	<link type="text/css" href="web/css/bootstrap.min.css" rel="stylesheet">
   <link type="text/css" href="web/css/estilos.css" rel="stylesheet">
   <link type="text/css" href="web/css/jquery-ui.css" rel="stylesheet">
-  <link rel="stylesheet" href="web/css/swipebox.css">
     <!-- ------------- -->
 	<link rel="icon" href="imagenes/FYHIcono.png" type="image/png">
   <script src="bower_components/firebase/firebase.js"></script>
 
 </head>
-<video autoplay="autoplay" loop="loop" id="video_background" preload="auto" volume="50"/>
-   <source src="imagenes/videoFondo.webm" type="video/webm" />
-   <source src="imagenes/videoFondo.mp4" type="video/webm" />
- </video>
 <div id="fondo">
 <nav id="navbar-superior" class="navbar navbar-expand-lg fixed-top navbar-dark">
   <a class="navbar-brand mr-0 mr-md-2" href="index.php" aria-label="icono">
@@ -49,21 +44,12 @@
 <div id="contenido" class="container mt-5">
 <?= $contenido ?>
 </div>
-
 	<script src="web/js/jquery.js"></script>
   <script src="web/js/popper.min.js"></script>
   <script src="web/js/bootstrap.min.js"></script>
   <script src="web/js/jquery-ui.js"></script>
   <script src="web/js/jquery-2.0.3.js"></script>
-  <script src="web/js/jquery.swipebox.js"></script>
-  <script src="http://code.jquery.com/jquery-3.2.1.min.js"
-        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-        crossorigin="anonymous"></script>
-
-
-
-  <script type="text/javascript" language="javascript" src="Scripts/jquery.BgImageTransition.js"></script>
-  <script type="text/javascript">/*
+  <script type="text/javascript">
     var index = 0;
     var listaimg = ["imagenes/fondo5.jpg", "imagenes/fondo2.jpg", "imagenes/fondo3.jpg", "imagenes/fondo4.jpg"];
     $('body').css("background-image", 'url("imagenes/fondo5.jpg")');
@@ -77,7 +63,7 @@
       if(index == 4)
         index = 0;
     }
-    */
+    
   </script>
 </body>
 <footer>
