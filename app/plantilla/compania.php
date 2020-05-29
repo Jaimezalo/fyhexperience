@@ -5,9 +5,9 @@
 </div>
 
 <div class="row justify-content-md-center mx-auto">
-  <div class="opciones col-lg-auto">
+  <div class="col-lg-auto">
     <a href="?cia=Amigos&orden=Enviar">
-      <img src="imagenes/amigos.jpg" class="rounded img-fluid d-inline-block mt-1" alt="Amigos">
+      <img src="imagenes/amigos.jpg" class="rounded img-fluid d-inline-block opciones mt-1" alt="Amigos">
     </a>
   </div>
   <div class="col-lg-auto">

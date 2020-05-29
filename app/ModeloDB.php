@@ -9,7 +9,7 @@ class BaseDatos extends SQLite3
         $this->open("app/dat/Destinos_BD.db");
     }
 
-    function Consultar(){
+    static function Consultar(){
         $bd = new BaseDatos();
         if (! $bd) {
              echo "la base de datos no se pudo abrir correctamente";

@@ -60,19 +60,18 @@
     "<a class=\"cruces ml-5\" href=\"?orden=Enviar\">&#x2718;</a></div>":''?>
   
     <?= isset($_GET['tipo'])?"<div class='col-lg-2 col-md-4 col-xs-12 col-sm-4 bg-secondary mx-1 font-italic Italica lead text-light rounded shadow p-2 text-right'>".$_GET['tipo'].
-    "<a class=\"cruces ml-5\" href=\"?orden=Enviar\">&#x2718;</a> </div>":''?>
+    "<a class=\"cruces ml-5\" href=\"?cia=".$_SESSION['cia']."&orden=Enviar\">&#x2718;</a> </div>":''?>
  
     <?= isset($_GET['precio'])?"<div class='col-lg-2 col-md-4 col-xs-12 col-sm-4 bg-success mx-1 font-italic Italica lead text-light rounded shadow p-2 text-right'>".$_GET['precio'].
-    "<a class=\"cruces ml-5\" href=\"?orden=Enviar\">&#x2718;</a></div>":''?>
+    "<a class=\"cruces ml-5\" href=\"?cia=".$_SESSION['cia']."&tipo=".$_SESSION['tipo']."&orden=Enviar\">&#x2718;</a></div>":''?>
   
     <?= isset($_GET['afluencia'])?"<div class='col-lg-2 col-md-4 col-xs-12 col-sm-4 bg-danger mx-1 font-italic Italica lead text-light rounded shadow p-2 text-right'>".$_GET['afluencia'].
-    "<a class=\"cruces ml-5\" href=\"?orden=Enviar\">&#x2718;</a></div>":''?>
+    "<a class=\"cruces ml-5\" href=\"?cia=".$_SESSION['cia']."&tipo=".$_SESSION['tipo']."&precio=".$_SESSION['precio']."&orden=Enviar\">&#x2718;</a></div>":''?>
   
     <?= isset($_GET['tipotur'])?"<div class='col-lg-2 col-md-4 col-xs-12 col-sm-4 bg-warning mx-1 font-italic Italica lead text-light rounded shadow p-2 text-right'>".$_GET['tipotur'].
-    "<a class=\"cruces ml-5\" href=\"?orden=Enviar\">&#x2718;</a></div>":''?>
+    "<a class=\"cruces ml-5\" href=\"?cia=".$_SESSION['cia']."&tipo=".$_SESSION['tipo']."&precio=".$_SESSION['precio']."&afluencia=".$_SESSION['afluencia']."&orden=Enviar\">&#x2718;</a></div>":''?>
   
 </div>
-
 </div>
 <div id="contenido2" class="container mb-5 ml-2">
 <?= $contenido ?>
