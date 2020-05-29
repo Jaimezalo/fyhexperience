@@ -14,6 +14,10 @@
   <script src="bower_components/firebase/firebase.js"></script>
 
 </head>
+<video autoplay="autoplay" loop="loop" id="video_background" preload="auto" volume="50"/>
+   <source src="imagenes/videoFondo.webm" type="video/webm" />
+   <source src="imagenes/videoFondo.mp4" type="video/webm" />
+ </video>
 <div id="fondo">
 <nav id="navbar-superior" class="navbar navbar-expand-lg fixed-top navbar-dark">
   <a class="navbar-brand mr-0 mr-md-2" href="index.php" aria-label="icono">
@@ -59,7 +63,7 @@
 
 
   <script type="text/javascript" language="javascript" src="Scripts/jquery.BgImageTransition.js"></script>
-  <script type="text/javascript">
+  <script type="text/javascript">/*
     var index = 0;
     var listaimg = ["imagenes/fondo5.jpg", "imagenes/fondo2.jpg", "imagenes/fondo3.jpg", "imagenes/fondo4.jpg"];
     $('body').css("background-image", 'url("imagenes/fondo5.jpg")');
@@ -73,7 +77,7 @@
       if(index == 4)
         index = 0;
     }
-    
+    */
   </script>
 </body>
 <footer>
