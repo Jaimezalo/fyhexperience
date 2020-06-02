@@ -9,7 +9,7 @@
   <link type="text/css" href="web/css/estilos.css" rel="stylesheet">
   <link type="text/css" href="web/css/jquery-ui.css" rel="stylesheet">
     <!-- ------------- -->
-	<link rel="icon" href="imagenes/FYHIcono.png" type="image/png">
+  <link rel="icon" href="imagenes/FYHIcono.png" type="image/png">
 </head>
 <nav class="navbar navbar-expand-lg fixed-top navbar-dark shadow p-3">
   <a class="navbar-brand mr-0 mr-md-2" href="index.php" aria-label="icono">
@@ -76,9 +76,6 @@
 <div id="contenido2" class="container mb-5">
 <?= $contenido ?>
 </div>
-
-
-
 	<script src="web/js/jquery.js"></script>
   <script src="web/js/popper.min.js"></script>
   <script src="web/js/bootstrap.min.js"></script>

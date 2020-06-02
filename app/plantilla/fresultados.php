@@ -4,7 +4,7 @@
 <!-- Imágenes -->
     <section class="showcase">
         <div class="container-fluid p-0">
-        <?php foreach ($destinos as $nombredestino => $datosdestino) : ?>
+        <?php foreach ($resultado as $nombredestino => $datosdestino) : ?>
         <?php if($cont % 2 == 0){ ?>
         <div class="row no-gutters">
             <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('imagenes/<?= $nombredestino ?>.jpg');"></div>

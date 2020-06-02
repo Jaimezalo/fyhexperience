@@ -24,7 +24,7 @@ function ctrLista()
     if(isset($_GET['cia']) && isset($_GET['tipo']) && isset($_GET['precio']) && isset($_GET['afluencia']) 
         && isset($_GET['tipotur'])){
         $_SESSION['tipotur'] = $_GET['tipotur'];
-        $destinos = BaseDatos::Consultar();
+        $resultado=Consultar();
         include_once 'plantilla/fresultados.php';
     }else{
         if(isset($_GET['cia']) && isset($_GET['tipo']) && isset($_GET['precio']) && isset($_GET['afluencia'])){
@@ -55,6 +55,8 @@ function ctrLista()
     //print_r($_GET['precio']);
     //$destinos = BaseDatos::Consultar();
     //include_once 'plantilla/fresultados.php';
+
+
 }
 
 function ctrCerrar()
@@ -63,7 +65,7 @@ function ctrCerrar()
 }
 
 function testLista(){
-    $destinos = BaseDatos::Consultar();
+    $destinos = Consultar();
 
 
 
