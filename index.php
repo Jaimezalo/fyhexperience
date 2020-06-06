@@ -8,7 +8,8 @@ $rutaUsuario = [
     "Empezar" => "ctrEmpezar",
     "Enviar" => "ctrLista",
     "Cerrar" => "ctrCerrar",
-    "Consultar" => "ctrConsultar"
+    "Consultar" => "ctrConsultar",
+    "Admin" => "ctrIntroducirDestino"
 ];
 
 if (isset($_GET['orden'])) {

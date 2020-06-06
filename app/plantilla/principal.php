@@ -10,7 +10,6 @@
   <link type="text/css" href="web/css/jquery-ui.css" rel="stylesheet">
     <!-- ------------- -->
 	<link rel="icon" href="imagenes/FYHIcono.png" type="image/png">
-  <script src="bower_components/firebase/firebase.js"></script>
 
 </head>
 <!--<video id="video_background" loop autoplay preload muted>

@@ -37,7 +37,8 @@
     </a>
   </div>
 </div>
-<div class="row justify-content-md-center mx-auto"><div class="col-lg-auto mb-5"></div></div>
+<div class="row justify-content-md-center mx-auto"><div class="col-lg-auto mb-5">
+</div></div>
 <?php
 $contenido = ob_get_clean();// Vacio el bufer
 include_once "secundaria.php";

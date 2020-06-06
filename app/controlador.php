@@ -64,9 +64,6 @@ function ctrCerrar()
     header('Location:index.php');
 }
 
-function testLista(){
-    $destinos = Consultar();
-
-
-
+function ctrIntroducirDestino(){
+    include_once 'plantilla/subirDatosFirebase.php';
 }
