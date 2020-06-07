@@ -12,11 +12,11 @@
 	<link rel="icon" href="imagenes/FYHIcono.png" type="image/png">
 
 </head>
-<!--<video id="video_background" loop autoplay preload muted>
-<source src="imagenes/videoFondo.mp4" type='video/mp4; codecs="avc1,mp4a"'/>
-<source src="imagenes/videoFondo.webm" type='video/webm; codecs="vp8,vorbis"'/>
-</video>-->
+
 <div id="fondo">
+<video autoplay="autoplay" loop="loop" id="video_background" preload="auto" volume="50"/>
+   <source src="imagenes/videoFondo.mp4" type="video/mp4" />
+ </video/>
 <nav id="navbar-superior" class="navbar navbar-expand-lg fixed-top navbar-dark">
   <a class="navbar-brand mr-0 mr-md-2" href="index.php" aria-label="icono">
       <img src="imagenes/FYHIcono.png" class="icono">
@@ -46,13 +46,14 @@
 <body>
 <div id="contenido" class="container mt-5">
 <?= $contenido ?>
+
 </div>
 	<script src="web/js/jquery.js"></script>
   <script src="web/js/popper.min.js"></script>
   <script src="web/js/bootstrap.min.js"></script>
   <script src="web/js/jquery-ui.js"></script>
   <script src="web/js/jquery-2.0.3.js"></script>
-  <script type="text/javascript">
+ <!-- <script type="text/javascript">
     var index = 0;
     var listaimg = ["imagenes/fondo5.jpg", "imagenes/fondo2.jpg", "imagenes/fondo3.jpg", "imagenes/fondo4.jpg"];
     $('body').css("background-image", 'url("imagenes/fondo5.jpg")');
@@ -67,7 +68,7 @@
         index = 0;
     }
     
-  </script>
+  </script>-->
 </body>
 <footer>
 <nav id="navbar-inferior" class="navbar fixed-bottom navbar-expand-sm navbar-dark">
