@@ -6,3 +6,4 @@ function confirmarVolver() {
 		document.location.href = "?orden=Empezar";
 	}
 }
+

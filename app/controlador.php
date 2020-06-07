@@ -14,12 +14,6 @@ function ctrEmpezar()
 
 function ctrLista()
 {
-    /*if(isset($_GET['cia'])){
-    	$_GET['cia'] = $_GET['cia'];
-    	include_once 'plantilla/tipo.php';
-    }else{
-    	header('Location:index.php');
-    }*/
 
     if(isset($_GET['cia']) && isset($_GET['tipo']) && isset($_GET['precio']) && isset($_GET['afluencia']) 
         && isset($_GET['tipotur'])){

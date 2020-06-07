@@ -85,28 +85,29 @@
    <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
    <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-app.js"></script>
 
-<!-- Add Firebase products that you want to use -->
-<script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-auth.js"></script>
-<script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-firestore.js"></script>
-<script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-storage.js"></script>
-    <script>
-  // Your web app's Firebase configuration
-  var firebaseConfig = {
-    apiKey: "AIzaSyDZcx0RkSilhBmk3E7Ccu8WtxNjwPk4USg",
-    authDomain: "find-your-holidays-5eb36.firebaseapp.com",
-    databaseURL: "https://find-your-holidays-5eb36.firebaseio.com",
-    projectId: "find-your-holidays-5eb36",
-    storageBucket: "find-your-holidays-5eb36.appspot.com",
-    messagingSenderId: "621872618497",
-    appId: "1:621872618497:web:2e7fedbbca637a52abf400",
-    measurementId: "G-Y6QYVKD6XB"
-  };
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
-  //firebase.analytics();
-  var storage = firebase.storage();
-</script>
-<script type="text/javascript" src="web/js/imagenesFirebase.js"></script>
+  <!-- Add Firebase products that you want to use -->
+  <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-storage.js"></script>
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyDZcx0RkSilhBmk3E7Ccu8WtxNjwPk4USg",
+      authDomain: "find-your-holidays-5eb36.firebaseapp.com",
+      databaseURL: "https://find-your-holidays-5eb36.firebaseio.com",
+      projectId: "find-your-holidays-5eb36",
+      storageBucket: "find-your-holidays-5eb36.appspot.com",
+      messagingSenderId: "621872618497",
+      appId: "1:621872618497:web:2e7fedbbca637a52abf400",
+      measurementId: "G-Y6QYVKD6XB"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    //firebase.analytics();
+    
+  </script>
+  <script type="text/javascript" src="web/js/imagenesFirebase.js"></script>
+
 </body>
 <footer>
 <nav class="navbar fixed-bottom navbar-expand-sm navbar-dark">
