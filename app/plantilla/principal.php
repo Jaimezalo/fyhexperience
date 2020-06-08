@@ -15,9 +15,14 @@
 
 <div id="fondo">
 <video autoplay="autoplay" loop="loop" id="video_background" preload="auto" volume="50"/>
-   <source src="imagenes/videoFondo.mp4" type="video/mp4" />
+<script>
+            document.addEventListener("DOMContentLoaded", function() {
+              mostrarVideoFondo();
+            });
+        </script>
+   <!--<source src="imagenes/videoFondo.mp4" type="video/mp4" />-->
  </video/>
-<nav id="navbar-superior" class="navbar navbar-expand-lg fixed-top navbar-dark">
+ <nav id="navbar-superior" class="navbar navbar-expand-lg fixed-top navbar-dark">
   <a class="navbar-brand mr-0 mr-md-2" href="index.php" aria-label="icono">
       <img src="imagenes/FYHIcono.png" class="icono">
   </a>
@@ -31,13 +36,13 @@
         <a class="nav-link font-italic Italica lead text-light mr-3" href="index.php">Inicio <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link font-italic Italica lead text-light mr-3" href="#">Qué ofrecemos</a>
+        <a class="nav-link font-italic Italica lead text-light mr-3" href="app/plantilla/varios.html">Qué ofrecemos</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link font-italic Italica lead text-light mr-3" href="#">Quiénes somos</a>
+        <a class="nav-link font-italic Italica lead text-light mr-3" href="app/plantilla/varios.html#team">Quiénes somos</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link font-italic Italica lead text-light" href="#">Contacto</a>
+        <a class="nav-link font-italic Italica lead text-light" href="app/plantilla/varios.html#contact">Contacto</a>
       </li>    
     </ul>
   </div>
@@ -53,22 +58,29 @@
   <script src="web/js/bootstrap.min.js"></script>
   <script src="web/js/jquery-ui.js"></script>
   <script src="web/js/jquery-2.0.3.js"></script>
- <!-- <script type="text/javascript">
-    var index = 0;
-    var listaimg = ["imagenes/fondo5.jpg", "imagenes/fondo2.jpg", "imagenes/fondo3.jpg", "imagenes/fondo4.jpg"];
-    $('body').css("background-image", 'url("imagenes/fondo5.jpg")');
-    $(function() {      
-      setInterval(carrusel, 3500);
-    });
+   <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+   <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-app.js"></script>
 
-    function carrusel() {
-      $('body').css("background-image", 'url(' + listaimg[index] + ')');
-      index++;
-      if(index == 4)
-        index = 0;
-    }
-    
-  </script>-->
+  <!-- Add Firebase products that you want to use -->
+  <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-storage.js"></script>
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyDZcx0RkSilhBmk3E7Ccu8WtxNjwPk4USg",
+      authDomain: "find-your-holidays-5eb36.firebaseapp.com",
+      databaseURL: "https://find-your-holidays-5eb36.firebaseio.com",
+      projectId: "find-your-holidays-5eb36",
+      storageBucket: "find-your-holidays-5eb36.appspot.com",
+      messagingSenderId: "621872618497",
+      appId: "1:621872618497:web:2e7fedbbca637a52abf400",
+      measurementId: "G-Y6QYVKD6XB"
+    };
+
+    firebase.initializeApp(firebaseConfig);
+  </script>
+  <script type="text/javascript" src="web/js/imagenesFirebase.js"></script>
 </body>
 <footer>
 <nav id="navbar-inferior" class="navbar fixed-bottom navbar-expand-sm navbar-dark">

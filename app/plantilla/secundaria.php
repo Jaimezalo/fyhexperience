@@ -12,40 +12,28 @@
 
 </head>
 
-<nav class="navbar navbar-expand-lg fixed-top navbar-dark shadow p-3">
+<nav id="navbar-superior" class="navbar navbar-expand-lg fixed-top navbar-dark">
   <a class="navbar-brand mr-0 mr-md-2" href="index.php" aria-label="icono">
-            <img src="imagenes/FYHIcono.png" class="icono">
-        </a>
+      <img src="imagenes/FYHIcono.png" class="icono">
+  </a>
   <p class="my-0 mr-md-auto font-weight-normal"><a href="index.php" class="title">Find Your Holidays</a></p>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+  <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse offset-sm-4" id="navbarNavDropdown">
-    <ul class="navbar-nav">
-      <li class="nav-item">
+    <ul class="navbar-nav mr-auto">
+    <li class="nav-item">
         <a class="nav-link font-italic Italica lead text-light mr-3" href="index.php">Inicio <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link font-italic Italica lead text-light mr-3" href="#">Qué ofrecemos</a>
+        <a class="nav-link font-italic Italica lead text-light mr-3" href="app/plantilla/varios.html">Qué ofrecemos</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link font-italic Italica lead text-light mr-3" href="#">Quiénes somos</a>
+        <a class="nav-link font-italic Italica lead text-light mr-3" href="app/plantilla/varios.html#team">Quiénes somos</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link font-italic Italica lead text-light" href="#">Contacto</a>
-      </li>
-      <!--
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Dropdown link
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <a class="dropdown-item" href="#">Something else here</a>
-        </div>
-      </li>
-      -->
+        <a class="nav-link font-italic Italica lead text-light" href="app/plantilla/varios.html#contact">Contacto</a>
+      </li>    
     </ul>
   </div>
 </nav>
@@ -101,10 +89,8 @@
       appId: "1:621872618497:web:2e7fedbbca637a52abf400",
       measurementId: "G-Y6QYVKD6XB"
     };
-    // Initialize Firebase
+
     firebase.initializeApp(firebaseConfig);
-    //firebase.analytics();
-    
   </script>
   <script type="text/javascript" src="web/js/imagenesFirebase.js"></script>
 

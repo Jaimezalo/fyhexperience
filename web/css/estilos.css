@@ -29,12 +29,14 @@
 	text-decoration: none;
 	font-size: 2em;
 }
+
 body{
 	background-image: url("imagenes/fondo4.jpg");
 	background-repeat: no-repeat;
 	background-size: auto;
 	background-position: cover;
 }
+
 .description{font-size: 1.1em;}
 
 .categories{margin: 0 auto;width: 40%;}
@@ -61,6 +63,7 @@ body{
 	text-decoration: none;
 	color: black;
 }
+
 .cruces:hover{
 	text-decoration: none;
 	color: black;
@@ -93,8 +96,9 @@ body{
 	height: auto;
 	z-index: -1000;
 	overflow: hidden;
-	}
-	#video_pattern {
+}
+
+#video_pattern {
 	background:#fff;
 	position: fixed;
 	opacity: 0.8;
@@ -103,4 +107,55 @@ body{
 	width: 100%;
 	height: 100%;
 	z-index: 1;
-	}
+}
+
+.team-member {
+  margin-bottom: 3rem;
+  text-align: center;
+}
+.team-member img {
+  width: 14rem;
+  height: 14rem;
+  border: 0.5rem solid rgba(0, 0, 0, 0.1);
+}
+.team-member h4 {
+  margin-top: 1.5rem;
+  margin-bottom: 0;
+}
+
+.page-section {
+  padding: 6rem 0;
+}
+.page-section h2.section-heading {
+  font-size: 2.5rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.text-muted {
+  color: #6c757d;
+}
+
+.page-section h3.section-subheading {
+  font-size: 1rem;
+  font-weight: 400;
+  font-style: italic;
+  font-family: "Droid Serif";
+  margin-bottom: 4rem;
+}
+
+.mx-auto {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#contact{
+  background-color: #212529;
+  background-image: url("../../imagenes/mapa.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.title-contact{
+	color: #fff;
+}
