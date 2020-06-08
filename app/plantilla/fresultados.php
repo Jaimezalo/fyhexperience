@@ -21,7 +21,9 @@
             <p class="lead mb-0"><?= $datosdestino[0] ?><br><a href="<?= $datosdestino[1] ?>"><?= $datosdestino[1] ?></a></p>
             <br>
             <a href="https://www.google.es/maps/place/<?= $nombredestino ?>" target="_blank"><input type="button" class="btn btn-info" value="Ver en Maps"></a>
-            </div>
+            <hr>
+        </div>
+        
         </div>
         <?php }else{ ?>
         <div class="row no-gutters">
@@ -33,12 +35,16 @@
             <p class="lead mb-0"><?= $datosdestino[0] ?><br><a href="<?= $datosdestino[1] ?>"><?= $datosdestino[1] ?></a></p>
             <br>
             <a href="https://www.google.es/maps/place/<?= $nombredestino ?>" target="_blank"><input type="button" class="btn btn-info" value="Ver en Maps"></a>
-            </div>
+            <hr>  
+        </div>
+        
         </div>
         <?php } ?>
         <?php $cont++; endforeach; ?>
+        
         </div>
-    </section>    
+    </section>  
+   
 
 <?php
 $contenido = ob_get_clean();// Vacio el bufer

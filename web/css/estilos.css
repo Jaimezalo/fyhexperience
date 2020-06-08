@@ -70,20 +70,33 @@ body{
 }
 
 .preferencias{text-align: center;}
+
 .espacio-sup{padding-top: 8em;opacity: 0.8;}
-.showcase .showcase-text{padding:3rem;}
-.imagenDestino{padding-top: 7rem;}
-.showcase .showcase-img{min-height:30rem;background-size:cover;}
+
+.showcase .showcase-text{padding:2rem;}
+
+.imagenDestino{padding-top:0;padding-bottom: 0;min-height: 20rem;}
+
+.showcase .showcase-img{min-height:15rem;background-size:cover;}
+
 .navbar{background-color: rgb(56, 43, 43);}
+
 #listaResultados{text-shadow: 1px 2px #999;}
 
+hr{
+	height:2px;
+	border-width:0;
+	color:gray;
+	background-color:gray
+}
 @media (min-width:768px){
-	.showcase .showcase-text{
-		padding:7rem}
+	.showcase .showcase-text{padding:7rem}
 	
-	.navbar{
-		background-color: rgba(0,0,0, 0.3);
-	}
+	.navbar{background-color: rgba(0,0,0, 0.3);}
+
+	.imagenDestino{padding-top: 7rem;}
+
+	hr{width: 0;height: 0;}
 }
 
 #video_background {
@@ -123,18 +136,15 @@ body{
   margin-bottom: 0;
 }
 
-.page-section {
-  padding: 6rem 0;
-}
+.page-section {padding: 6rem 0;}
+
 .page-section h2.section-heading {
   font-size: 2.5rem;
   margin-top: 0;
   margin-bottom: 1rem;
 }
 
-.text-muted {
-  color: #6c757d;
-}
+.text-muted {color: #6c757d;}
 
 .page-section h3.section-subheading {
   font-size: 1rem;
@@ -156,6 +166,5 @@ body{
   background-position: center;
 }
 
-.title-contact{
-	color: #fff;
-}
+.title-contact{color: #fff;}
+
