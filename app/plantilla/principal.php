@@ -36,13 +36,13 @@
         <a class="nav-link font-italic Italica lead text-light mr-3" href="index.php">Inicio <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link font-italic Italica lead text-light mr-3" href="app/plantilla/varios.html">Qué ofrecemos</a>
+        <a class="nav-link font-italic Italica lead text-light mr-3" href="app/plantilla/varios.php">Qué ofrecemos</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link font-italic Italica lead text-light mr-3" href="app/plantilla/varios.html#team">Quiénes somos</a>
+        <a class="nav-link font-italic Italica lead text-light mr-3" href="app/plantilla/varios.php#team">Quiénes somos</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link font-italic Italica lead text-light" href="app/plantilla/varios.html#contact">Contacto</a>
+        <a class="nav-link font-italic Italica lead text-light" href="app/plantilla/varios.php#contact">Contacto</a>
       </li>    
     </ul>
   </div>
@@ -115,6 +115,10 @@
           </li>
         </ul>
       </div>
+      <div class="col-lg-4 text-lg-right" style="color: white;">
+            <!-- <a href="#!">Terms of Use</a> -->
+            Copyright © FYH travels 2020
+        </div>
     </nav>
 </footer>
 

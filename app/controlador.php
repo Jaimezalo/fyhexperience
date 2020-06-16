@@ -9,36 +9,36 @@ function ctrInicio()
 
 function ctrEmpezar()
 {
-    include_once 'plantilla/compania.php';
+    include_once 'plantilla/tipoturismo.php';
 }
 
 function ctrLista()
 {
 
-    if(isset($_GET['cia']) && isset($_GET['tipo']) && isset($_GET['precio']) && isset($_GET['afluencia']) 
-        && isset($_GET['tipotur'])){
-        $_SESSION['tipotur'] = $_GET['tipotur'];
+    if(isset($_GET['tipotur']) && isset($_GET['cia']) && isset($_GET['tipo']) && isset($_GET['precio']) 
+        && isset($_GET['afluencia'])){
+        $_SESSION['afluencia'] = $_GET['afluencia'];
         $resultado=Consultar();
         include_once 'plantilla/fresultados.php';
     }else{
-        if(isset($_GET['cia']) && isset($_GET['tipo']) && isset($_GET['precio']) && isset($_GET['afluencia'])){
-            $_SESSION['afluencia'] = $_GET['afluencia'];
-            include_once 'plantilla/tipoturismo.php';
+        if(isset($_GET['tipotur']) && isset($_GET['cia']) && isset($_GET['tipo']) && isset($_GET['precio'])){
+            $_SESSION['precio'] = $_GET['precio'];
+            include_once 'plantilla/afluencia.php';
         }else{
-            if(isset($_GET['cia']) && isset($_GET['tipo']) && isset($_GET['precio'])){
-                $_SESSION['precio'] = $_GET['precio'];
-                include_once 'plantilla/afluencia.php';
+            if(isset($_GET['tipotur']) && isset($_GET['cia']) && isset($_GET['tipo'])){
+                $_SESSION['tipo'] = $_GET['tipo'];
+                include_once 'plantilla/precio.php';
             }
             else{
-                if(isset($_GET['cia']) && isset($_GET['tipo'])){
-                	$_SESSION['tipo'] = $_GET['tipo'];
-                	include_once 'plantilla/precio.php';
+                if(isset($_GET['tipotur']) && isset($_GET['cia'])){
+                	$_SESSION['cia'] = $_GET['cia'];
+                	include_once 'plantilla/tipo.php';
                 }else{
-                	if(isset($_GET['cia'])){
-                		$_SESSION['cia'] = $_GET['cia'];
-                		include_once 'plantilla/tipo.php';
-                	}else{
+                	if(isset($_GET['tipotur'])){
+                		$_SESSION['tipotur'] = $_GET['tipotur'];
                 		include_once 'plantilla/compania.php';
+                	}else{
+                		include_once 'plantilla/tipoturismo.php';
                 	}
                 }
             }

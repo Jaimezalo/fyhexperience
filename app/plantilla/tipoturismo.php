@@ -5,17 +5,17 @@
 </div> 
 <div class="row justify-content-md-center mx-auto">
   <div class="col-lg-auto">
-    <a href="?cia=<?= $_SESSION['cia'] ?>&tipo=<?= $_SESSION['tipo'] ?>&precio=<?= $_SESSION['precio'] ?>&afluencia=<?= $_SESSION['afluencia'] ?>&tipotur=Cultural&orden=Enviar">
-      <img src="imagenes/cultural.jpg" class="rounded img-fluid d-inline-block opciones mt-1" alt="cultural">
+    <a href="?tipotur=Cultural&orden=Enviar">
+      <img src="imagenes/cultural.jpg" class="rounded img-fluid d-inline-block opciones mt-1" alt="Cultural">
     </a>
   </div>
   <div class="col-lg-auto">
-    <a href="?cia=<?= $_SESSION['cia'] ?>&tipo=<?= $_SESSION['tipo'] ?>&precio=<?= $_SESSION['precio'] ?>&afluencia=<?= $_SESSION['afluencia'] ?>&tipotur=Shopping&orden=Enviar">
-      <img src="imagenes/shopping.jpg" class="rounded img-fluid d-inline-block opciones mt-1" alt="shopping">
+    <a href="?tipotur=Shopping&orden=Enviar">
+      <img src="imagenes/shopping.jpg" class="rounded img-fluid d-inline-block opciones mt-1" alt="Shopping">
     </a>
   </div>
   <div class="col-lg-auto">
-    <a href="?cia=<?= $_SESSION['cia'] ?>&tipo=<?= $_SESSION['tipo'] ?>&precio=<?= $_SESSION['precio'] ?>&afluencia=<?= $_SESSION['afluencia'] ?>&tipotur=Turismo+de+noche&orden=Enviar">
+    <a href="?tipotur=Turismo+de+noche&orden=Enviar">
       <img src="imagenes/discoteca.jpg" class="rounded img-fluid d-inline-block opciones mt-1" alt="Turismo de noche">
     </a>
   </div>
@@ -23,30 +23,27 @@
 
 <div class="row justify-content-md-center mx-auto">
   <div class="col-lg-auto">
-    <a href="?cia=<?= $_SESSION['cia'] ?>&tipo=<?= $_SESSION['tipo'] ?>&precio=<?= $_SESSION['precio'] ?>&afluencia=<?= $_SESSION['afluencia'] ?>&tipotur=Rural&orden=Enviar">
+    <a href="?tipotur=Rural&orden=Enviar">
       <img src="imagenes/rural.jpg" class="rounded img-fluid d-inline-block opciones mt-1" alt="Rural">
     </a>
   </div>
   <div class="col-lg-auto">
-    <a href="?cia=<?= $_SESSION['cia'] ?>&tipo=<?= $_SESSION['tipo'] ?>&precio=<?= $_SESSION['precio'] ?>&afluencia=<?= $_SESSION['afluencia'] ?>&tipotur=Salud&orden=Enviar">
+    <a href="?tipotur=Salud&orden=Enviar">
       <img src="imagenes/balneario.jpg" class="rounded img-fluid d-inline-block opciones mt-1" alt="Salud">
     </a>
   </div>
   <div class="col-lg-auto">
-    <?php if($_SESSION['tipo'] == "Costa"){ ?>
-    <a href="?cia=<?= $_SESSION['cia'] ?>&tipo=<?= $_SESSION['tipo'] ?>&precio=<?= $_SESSION['precio'] ?>&afluencia=<?= $_SESSION['afluencia'] ?>&tipotur=Sol+y+playa&orden=Enviar">
+    <a href="?tipotur=Sol+y+playa&orden=Enviar">
       <img src="imagenes/solyplaya.jpg" class="rounded img-fluid d-inline-block opciones mt-1" alt="Sol y playa">
-    </a>
-    <?php } ?> 
+    </a> 
   </div>
 </div>
 
 <div class="row justify-content-md-center mx-auto">
   <div class="col-lg-auto">
-    <a href="?cia=<?= $_SESSION['cia'] ?>&tipo=<?= $_SESSION['tipo'] ?>&precio=<?= $_SESSION['precio'] ?>&orden=Enviar">
+    <a href="?orden=Inicio">
       <input type="button"class="btn btn-success mt-2" value="Volver">
     </a>
-      <input type="button"class="btn btn-info mt-2" onclick="confirmarVolver();" value="Volver a Empezar">
     
   </div>
 </div>

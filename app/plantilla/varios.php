@@ -113,36 +113,37 @@
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase title-contact">Contacta con nosotros</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <h3 class="section-subheading text-muted">Indique sus datos, contestaremos lo más rápido posible.</h3>
                 </div>
-                <form id="contactForm" name="sentMessage" novalidate="novalidate">
+                <form id="contactForm" name="sentMessage" method="post">
                     <div class="row align-items-stretch mb-5">
                         <div class="col-md-6">
                             <div class="form-group">
-                                <input class="form-control" id="name" type="text" placeholder="Nombre *" required="required" data-validation-required-message="Please enter your name." />
+                                <input class="form-control" name="nombre" type="text" placeholder="Nombre *" required="required" data-validation-required-message="Introduzca su nombre." />
                                 <p class="help-block text-danger"></p>
                             </div>
                             <div class="form-group">
-                                <input class="form-control" id="email" type="email" placeholder="Email *" required="required" data-validation-required-message="Por favor introduzca su email correctamente." />
+                                <input class="form-control" name="dir_email" type="email" placeholder="Email *" required="required" data-validation-required-message="Por favor introduzca su email correctamente." />
                                 <p class="help-block text-danger"></p>
                             </div>
                             <div class="form-group mb-md-0">
-                                <input class="form-control" id="phone" type="tel" placeholder="Teléfono *" required="required" data-validation-required-message="Por favor introduzca su teléfono." />
+                                <input class="form-control" name="asunto" type="text" placeholder="Asunto *" required="required" data-validation-required-message="Por favor indique el asunto del correo." />
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group form-group-textarea mb-md-0">
-                                <textarea rows="8" class="form-control" id="message" placeholder="Tu mensaje *" required="required" data-validation-required-message="Please enter a message."></textarea>
+                                <textarea rows="8" class="form-control" name="mensaje" placeholder="Tu mensaje *" required="required" data-validation-required-message="Por favor escriba su mensaje."></textarea>
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div>
                     </div>
                     <div class="text-center">
                         <div id="success"></div>
-                        <button class="btn btn-primary btn-xl text-uppercase" id="sendMessageButton" type="submit">Enviar mensaje</button>
+                        <button class="btn btn-primary btn-xl text-uppercase" name="EnviarMsg" type="submit">Enviar mensaje</button>
                     </div>
                 </form>
+                <?php include("correo.php"); ?>
             </div>
         </section>
 
@@ -154,7 +155,8 @@
                     <div class="col-lg-4 my-3 my-lg-0">
                         <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a><a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a><a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
                     </div>
-                    <div class="col-lg-4 text-lg-right"><a class="mr-3" href="#!">Privacy Policy</a><a href="#!">Terms of Use</a></div>
+                    <div class="col-lg-4 text-lg-right"><a class="mr-3" href="#!">Privacy Policy</a>
+                    <a href="#!">Terms of Use</a></div>
                 </div>
             </div>
         </footer>
@@ -191,6 +193,11 @@
             </a>
           </li>
         </ul>
+      </div>
+        <div class="col-lg-4 text-lg-right" style="color: white;">
+            <!-- <a href="#!">Terms of Use</a> -->
+            Copyright © FYH travels 2020
+        </div>
       </div>
     </nav>
 </footer>

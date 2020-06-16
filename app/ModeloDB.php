@@ -17,9 +17,7 @@ function Consultar(){
     $destinos = json_decode (curl_exec($ch), true);
     curl_close($ch);      
     foreach ($destinos as $destino) {
-        if(($destino['d_afluencia']==$afluencia)&&($destino['d_compania']==$cia)&&
-        ($destino['d_tipo']==$tipo)&&($destino['d_precio']==$precio)&&
-        ($destino['d_tipo_turismo'])){
+        if($destino['d_compania'] == $cia && ($destino['d_tipo']==$tipo || $tipo=="Indiferente") && ($destino['d_precio']==$precio || $precio=="Indiferente") && ($destino['d_afluencia']==$afluencia || $afluencia=="Indiferente") &&  $destino['d_tipo_turismo'] == $tipotur){
             $datosdestino = [
                 $destino['d_descripcion'],
                 $destino['d_link']

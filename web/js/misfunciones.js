@@ -7,3 +7,6 @@ function confirmarVolver() {
 	}
 }
 
+function avisoInterior() {
+	alert('Esta opción no está disponible si escogiste "Sol y playa".')
+}

@@ -26,13 +26,13 @@
         <a class="nav-link font-italic Italica lead text-light mr-3" href="index.php">Inicio <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link font-italic Italica lead text-light mr-3" href="app/plantilla/varios.html">Qué ofrecemos</a>
+        <a class="nav-link font-italic Italica lead text-light mr-3" href="app/plantilla/varios.php">Qué ofrecemos</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link font-italic Italica lead text-light mr-3" href="app/plantilla/varios.html#team">Quiénes somos</a>
+        <a class="nav-link font-italic Italica lead text-light mr-3" href="app/plantilla/varios.php#team">Quiénes somos</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link font-italic Italica lead text-light" href="app/plantilla/varios.html#contact">Contacto</a>
+        <a class="nav-link font-italic Italica lead text-light" href="app/plantilla/varios.php#contact">Contacto</a>
       </li>    
     </ul>
   </div>
@@ -45,20 +45,20 @@
 <div class="row mt-5"></div>
 
 <div id="listaResultados" class="row mt-2 ">
-    <?= isset($_GET['cia'])?"<div class='col-lg-2 col-md-4 col-xs-12 col-sm-4 bg-primary mx-1 font-italic Italica lead text-light rounded shadow p-2 text-right'>".$_GET['cia'].
+    <?= isset($_GET['tipotur'])?"<div class='col-lg-2 col-md-4 col-xs-12 col-sm-4 bg-primary mx-1 font-italic Italica lead text-light rounded shadow p-2 text-right'>".$_GET['tipotur'].
     "<a class=\"cruces ml-5\" href=\"?orden=Enviar\">&#x2718;</a></div>":''?>
   
-    <?= isset($_GET['tipo'])?"<div class='col-lg-2 col-md-4 col-xs-12 col-sm-4 bg-secondary mx-1 font-italic Italica lead text-light rounded shadow p-2 text-right'>".$_GET['tipo'].
-    "<a class=\"cruces ml-5\" href=\"?cia=".$_SESSION['cia']."&orden=Enviar\">&#x2718;</a> </div>":''?>
+    <?= isset($_GET['cia'])?"<div class='col-lg-2 col-md-4 col-xs-12 col-sm-4 bg-secondary mx-1 font-italic Italica lead text-light rounded shadow p-2 text-right'>".$_GET['cia'].
+    "<a class=\"cruces ml-5\" href=\"?tipotur=".$_SESSION['tipotur']."&orden=Enviar\">&#x2718;</a> </div>":''?>
  
-    <?= isset($_GET['precio'])?"<div class='col-lg-2 col-md-4 col-xs-12 col-sm-4 bg-success mx-1 font-italic Italica lead text-light rounded shadow p-2 text-right'>".$_GET['precio'].
-    "<a class=\"cruces ml-5\" href=\"?cia=".$_SESSION['cia']."&tipo=".$_SESSION['tipo']."&orden=Enviar\">&#x2718;</a></div>":''?>
+    <?= isset($_GET['tipo'])?"<div class='col-lg-2 col-md-4 col-xs-12 col-sm-4 bg-success mx-1 font-italic Italica lead text-light rounded shadow p-2 text-right'>".$_GET['tipo'].
+    "<a class=\"cruces ml-5\" href=\"?tipotur=".$_SESSION['tipotur']."&cia=".$_SESSION['cia']."&orden=Enviar\">&#x2718;</a></div>":''?>
   
-    <?= isset($_GET['afluencia'])?"<div class='col-lg-2 col-md-4 col-xs-12 col-sm-4 bg-danger mx-1 font-italic Italica lead text-light rounded shadow p-2 text-right'>".$_GET['afluencia'].
-    "<a class=\"cruces ml-5\" href=\"?cia=".$_SESSION['cia']."&tipo=".$_SESSION['tipo']."&precio=".$_SESSION['precio']."&orden=Enviar\">&#x2718;</a></div>":''?>
+    <?= isset($_GET['precio'])?"<div class='col-lg-2 col-md-4 col-xs-12 col-sm-4 bg-danger mx-1 font-italic Italica lead text-light rounded shadow p-2 text-right'>".$_GET['precio'].
+    "<a class=\"cruces ml-5\" href=\"?tipotur=".$_SESSION['tipotur']."&cia=".$_SESSION['cia']."&tipo=".$_SESSION['tipo']."&orden=Enviar\">&#x2718;</a></div>":''?>
   
-    <?= isset($_GET['tipotur'])?"<div class='col-lg-2 col-md-4 col-xs-12 col-sm-4 bg-warning mx-1 font-italic Italica lead text-light rounded shadow p-2 text-right'>".$_GET['tipotur'].
-    "<a class=\"cruces ml-5\" href=\"?cia=".$_SESSION['cia']."&tipo=".$_SESSION['tipo']."&precio=".$_SESSION['precio']."&afluencia=".$_SESSION['afluencia']."&orden=Enviar\">&#x2718;</a></div>":''?>
+    <?= isset($_GET['afluencia'])?"<div class='col-lg-2 col-md-4 col-xs-12 col-sm-4 bg-warning mx-1 font-italic Italica lead text-light rounded shadow p-2 text-right'>".$_GET['afluencia'].
+    "<a class=\"cruces ml-5\" href=\"?tipotur=".$_SESSION['tipotur']."&cia=".$_SESSION['cia']."&tipo=".$_SESSION['tipo']."&precio=".$_SESSION['precio']."&orden=Enviar\">&#x2718;</a></div>":''?>
   
 </div>
 </div>
@@ -124,6 +124,10 @@
           </li>
         </ul>
       </div>
+      <div class="col-lg-4 text-lg-right" style="color: white;">
+            <!-- <a href="#!">Terms of Use</a> -->
+            Copyright © FYH travels 2020
+        </div>
     </nav>
 </footer>
 </html>
