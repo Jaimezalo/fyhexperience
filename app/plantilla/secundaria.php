@@ -125,7 +125,6 @@
         </ul>
       </div>
       <div class="col-lg-4 text-lg-right" style="color: white;">
-            <!-- <a href="#!">Terms of Use</a> -->
             Copyright © FYH travels 2020
         </div>
     </nav>

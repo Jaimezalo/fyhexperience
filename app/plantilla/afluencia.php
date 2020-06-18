@@ -40,8 +40,6 @@
   </div>
 </div>
 
-
-
 <?php
 $contenido = ob_get_clean();// Vacio el bufer
 include_once "secundaria.php";

@@ -16,11 +16,11 @@
 <div id="fondo">
 <video autoplay="autoplay" loop="loop" id="video_background" preload="auto" volume="50"/>
 <script>
-            document.addEventListener("DOMContentLoaded", function() {
-              mostrarVideoFondo();
-            });
-        </script>
-   <!--<source src="imagenes/videoFondo.mp4" type="video/mp4" />-->
+  document.addEventListener("DOMContentLoaded", function() {
+    mostrarVideoFondo();
+  });
+</script>
+
  </video/>
  <nav id="navbar-superior" class="navbar navbar-expand-lg fixed-top navbar-dark">
   <a class="navbar-brand mr-0 mr-md-2" href="index.php" aria-label="icono">
@@ -58,6 +58,7 @@
   <script src="web/js/bootstrap.min.js"></script>
   <script src="web/js/jquery-ui.js"></script>
   <script src="web/js/jquery-2.0.3.js"></script>
+  
    <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
    <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-app.js"></script>
 

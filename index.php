@@ -9,7 +9,12 @@ $rutaUsuario = [
     "Enviar" => "ctrLista",
     "Cerrar" => "ctrCerrar",
     "Consultar" => "ctrConsultar",
-    "Admin" => "ctrIntroducirDestino"
+    "Admin" => "ctrAdmin",
+    "Crear" => "ctrCrear",
+    "Borrar" => "ctrBorrar",
+    "Alta" => "ctrAlta",
+    "Delete" => "ctrDelete",
+    "cerrarSesion" => "ctrCerrarSesion"
 ];
 
 if (isset($_GET['orden'])) {

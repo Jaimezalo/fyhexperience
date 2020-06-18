@@ -43,14 +43,7 @@ function ctrLista()
                 }
             }
         }
-    }    
-    //print_r($_GET['cia']);
-    //print_r($_GET['tipo']);
-    //print_r($_GET['precio']);
-    //$destinos = BaseDatos::Consultar();
-    //include_once 'plantilla/fresultados.php';
-
-
+    }
 }
 
 function ctrCerrar()
@@ -58,6 +51,47 @@ function ctrCerrar()
     header('Location:index.php');
 }
 
-function ctrIntroducirDestino(){
-    include_once 'plantilla/subirDatosFirebase.php';
+
+function ctrAdmin(){
+    
+    if(isset($_SESSION['user'])){
+        include_once 'plantilla/login.php';
+    }else{
+        include_once 'plantilla/datos.php';
+    }
 }
+
+function ctrCerrarSesion(){
+    session_destroy();
+    header('Location:index.php?orden=Inicio');
+}
+function ctrBorrar(){
+    include_once 'plantilla/borrar.php';
+}
+
+function ctrCrear(){
+    include_once 'plantilla/crear.php';
+}
+
+function ctrDelete(){
+    
+    $nombre = modeloDelete();
+    if($nombre != null){
+        echo "<script>";
+        echo "borrarNombre(" . $nombre . ")";
+        echo "</script>";
+        $msg = '<p style="color:green"> ' . $nombre .' borrado con exito</p>';
+    } else {
+        $msg = '<p style="color:red"> Error. El destino no ha sido borrado </p>';
+    }
+    include_once 'plantilla/borrar.php';
+    
+}
+
+function ctrAlta(){
+    $resultados = modeloAlta();
+    $msg = modeloSubida($resultados);
+    include_once 'plantilla/crear.php';
+}
+
+?>
